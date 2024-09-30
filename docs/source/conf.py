@@ -18,10 +18,10 @@ import sys
 
 import alabaster  # noqa
 
-import dramatiq  # noqa
-
 sys.path.insert(0, os.path.abspath('../..'))
 sys.path.insert(0, os.path.abspath('./'))
+
+import dramatiq  # noqa
 
 
 # -- General configuration ------------------------------------------------
@@ -192,7 +192,7 @@ texinfo_documents = [
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {
-    'https://docs.python.org/3/': None,
-    'https://pika.readthedocs.io/en/stable/': None,
-    'https://redis-py.readthedocs.io/en/latest/': None,
+    'python': ('https://docs.python.org/3', None),
+    'pika': ('https://pika.readthedocs.io/en/stable/', None),
+    'redis': ('https://redis-py.readthedocs.io/en/latest/', None),
 }
